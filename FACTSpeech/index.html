@@ -64,7 +64,7 @@
                 <li class="nav-item mx-0 mx-lg-1" style="background-color: #117a8b"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                                      href="#tran_text_to_speech">Transliterated text to speech</a></li>
                 <li class="nav-item mx-0 mx-lg-1" style="background-color: #117a8b"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                                                                       href="#intensity">Language style interpolation</a></li>
+                                                                                       href="#interpolation">Language style interpolation</a></li>
                 <li class="nav-item mx-0 mx-lg-1" style="background-color: #117a8b"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                                                                        href="#ablation_study">Ablation study</a></li>
 
@@ -387,22 +387,147 @@
 
 
 
-<section class="page-section bg-primary text-white mb-0" id="intensity">
-    <div class="container">
+<!--<section class="page-section bg-primary text-white mb-0" id="intensity_">-->
+<!--    <div class="container">-->
+<!--        &lt;!&ndash; About Section Heading&ndash;&gt;-->
+<!--        <div class="text-center">-->
+<!--            <h2 class="page-section-heading d-inline-block text-white">Language style interpolation</h2>-->
+<!--            &lt;!&ndash;                                         <p class="pre-wrap lead">&nbsp;</p> &ndash;&gt;-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Icon Divider&ndash;&gt;-->
+<!--        <div class="divider-custom divider-light">-->
+<!--            <div class="divider-custom"></div>-->
+<!--        </div>-->
+<!--        <div class="row justify-content-center">-->
+
+<!--            &lt;!&ndash; About Section Content&ndash;&gt;-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-12 ml-auto">-->
+
+<!--                    <table class="table table-responsive align-content-center"-->
+<!--                           style="background-color: whitesmoke; border-radius: 20px">-->
+<!--                        <tr>-->
+<!--                            <td style="vertical-align: middle;">-->
+<!--                                Script: 냉각수나 배터리는 미리 점검하세요.-->
+<!--                                <br>-->
+<!--                                <span style="color: slategray; opacity: 0.5">naenggaksuna "battery"-neun miri jeomgeomhaseyo.</span>-->
+<!--                            </td>-->
+
+<!--                        </tr>-->
+
+<!--                    </table>-->
+<!--                    <table class="table table-responsive align-content-center"-->
+<!--                           style="background-color: whitesmoke; border-radius: 20px">-->
+
+<!--                        <tr>-->
+<!--                            <td style="vertical-align: middle; text-align:center;">-->
+<!--                                <img src="./assets/img/intensity/00.png" width="400">-->
+<!--                            </td>-->
+<!--                            <td style="text-align:center;">-->
+<!--                                <audio id="player" controls>-->
+<!--                                    <source src="./audio/intensity/00.wav"-->
+<!--                                            type="audio/wav"/>-->
+<!--                                </audio>-->
+<!--                                <br>-->
+<!--                                $$e_{LSE}^{zero}$$-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td style="vertical-align: middle; text-align:center;">-->
+<!--                                <img src="./assets/img/intensity/02.png" width="400">-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <audio id="player" controls>-->
+<!--                                    <source src="./audio/intensity/02.wav"-->
+<!--                                            type="audio/wav"/>-->
+<!--                                </audio>-->
+<!--                                <br>-->
+<!--                                $$e_{LSE}^{kor2eng} * 0.2$$-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td style="vertical-align: middle; text-align:center;">-->
+<!--                                <img src="./assets/img/intensity/04.png"  width="400">-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <audio id="player" controls>-->
+<!--                                    <source src="./audio/intensity/04.wav"-->
+<!--                                            type="audio/wav"/>-->
+<!--                                </audio>-->
+<!--                                <br>-->
+<!--                                $$e_{LSE}^{kor2eng} * 0.4$$-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td style="vertical-align: middle; text-align:center;">-->
+<!--                                <img src="./assets/img/intensity/06.png"  width="400">-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <audio id="player" controls>-->
+<!--                                    <source src="./audio/intensity/06.wav"-->
+<!--                                            type="audio/wav"/>-->
+<!--                                </audio>-->
+<!--                                <br>-->
+<!--                                $$e_{LSE}^{kor2eng} * 0.6$$-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td style="vertical-align: middle; text-align:center;">-->
+<!--                                <img src="./assets/img/intensity/08.png"  width="400">-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <audio id="player" controls>-->
+<!--                                    <source src="./audio/intensity/08.wav"-->
+<!--                                            type="audio/wav"/>-->
+<!--                                </audio>-->
+<!--                                <br>-->
+<!--                                $$e_{LSE}^{kor2eng} * 0.8$$-->
+<!--                            </td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td style="vertical-align: middle; text-align:center;">-->
+<!--                                <img src="./assets/img/intensity/10.png"  width="400">-->
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                                <audio id="player" controls>-->
+<!--                                    <source src="./audio/intensity/10.wav"-->
+<!--                                            type="audio/wav"/>-->
+<!--                                </audio>-->
+<!--                                <br>-->
+<!--                                $$e_{LSE}^{kor2eng} * 1.0$$-->
+<!--                            </td>-->
+<!--                        </tr>-->
+
+<!--                    </table>-->
+
+
+
+<!--                    <p></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--</section>-->
+
+
+<section class="page-section bg-primary text-white mb-0" id="interpolation">
+    <div class="container-fluid">
         <!-- About Section Heading-->
         <div class="text-center">
             <h2 class="page-section-heading d-inline-block text-white">Language style interpolation</h2>
-            <!--                                         <p class="pre-wrap lead">&nbsp;</p> -->
         </div>
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
             <div class="divider-custom"></div>
         </div>
+
         <div class="row justify-content-center">
 
             <!-- About Section Content-->
             <div class="row">
                 <div class="col-lg-12 ml-auto">
+
 
                     <table class="table table-responsive align-content-center"
                            style="background-color: whitesmoke; border-radius: 20px">
@@ -412,102 +537,208 @@
                                 <br>
                                 <span style="color: slategray; opacity: 0.5">naenggaksuna "battery"-neun miri jeomgeomhaseyo.</span>
                             </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row text-center">
+                                    <div class="col-lg-12 ml-auto">
+                                    </div>
 
+                                    <div class="col-lg-12 ml-auto" style="background: lightslategray">
+                                        <br>
+                                        <h5>Interpolation</h5>
+
+                                        <span id="lse-val10" style="font-size: 25px;">\(e_{LSE}^{zero}\)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input id="intensity0" type="input" data-slider-min="0" data-slider-max="1"
+                                               data-slider-step="0.2" data-sliåder-value="0"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span id="lse-val20" style="font-size: 23px;">\(e_{LSE}^{kor2eng}\)</span>
+                                        <br>
+                                        <br>
+                                    </div>
+
+                                </div>
+
+                                <br>
+
+                                <div class="row">
+                                    <div class="text-center col-lg-12">
+                                        <br/>
+                                        <img id="img_src0" src="./assets/img/intensity/10.png" width="500">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="text-center col-lg-12">
+                                        <br/>
+                                        <audio id="audio_panel0" controls="controls">
+                                            <source id="audio_src0" src="./audio/intensity/00.wav" type="audio/wav"/>
+                                        </audio>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
 
                     </table>
+
+
+
                     <table class="table table-responsive align-content-center"
                            style="background-color: whitesmoke; border-radius: 20px">
+                        <tr>
+                            <td style="vertical-align: middle;">
+                                Script: The next song is pi ttam nunmul by bangtan sonyeondan.
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row text-center">
+                                    <div class="col-lg-12 ml-auto">
+                                    </div>
 
-                        <tr>
-                            <td style="vertical-align: middle; text-align:center;">
-                                <img src="./assets/img/intensity/00.png" width="400">
-                            </td>
-                            <td style="text-align:center;">
-                                <audio id="player" controls>
-                                    <source src="./audio/intensity/00.wav"
-                                            type="audio/wav"/>
-                                </audio>
+                                    <div class="col-lg-12 ml-auto" style="background: lightslategray">
+                                        <br>
+                                        <h5>Interpolation</h5>
+
+                                        <span id="lse-val11" style="font-size: 25px;">\(e_{LSE}^{zero}\)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input id="intensity1" type="input" data-slider-min="0" data-slider-max="1"
+                                               data-slider-step="0.2" data-sliåder-value="0"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span id="lse-val21" style="font-size: 23px;">\(e_{LSE}^{eng2kor}\)</span>
+                                        <br>
+                                        <br>
+                                    </div>
+
+                                </div>
+
                                 <br>
-                                $$e_{LSE}^{zero}$$
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: middle; text-align:center;">
-                                <img src="./assets/img/intensity/02.png" width="400">
-                            </td>
-                            <td>
-                                <audio id="player" controls>
-                                    <source src="./audio/intensity/02.wav"
-                                            type="audio/wav"/>
-                                </audio>
-                                <br>
-                                $$e_{LSE}^{kor2eng} * 0.2$$
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: middle; text-align:center;">
-                                <img src="./assets/img/intensity/04.png"  width="400">
-                            </td>
-                            <td>
-                                <audio id="player" controls>
-                                    <source src="./audio/intensity/04.wav"
-                                            type="audio/wav"/>
-                                </audio>
-                                <br>
-                                $$e_{LSE}^{kor2eng} * 0.4$$
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: middle; text-align:center;">
-                                <img src="./assets/img/intensity/06.png"  width="400">
-                            </td>
-                            <td>
-                                <audio id="player" controls>
-                                    <source src="./audio/intensity/06.wav"
-                                            type="audio/wav"/>
-                                </audio>
-                                <br>
-                                $$e_{LSE}^{kor2eng} * 0.6$$
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: middle; text-align:center;">
-                                <img src="./assets/img/intensity/08.png"  width="400">
-                            </td>
-                            <td>
-                                <audio id="player" controls>
-                                    <source src="./audio/intensity/08.wav"
-                                            type="audio/wav"/>
-                                </audio>
-                                <br>
-                                $$e_{LSE}^{kor2eng} * 0.8$$
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: middle; text-align:center;">
-                                <img src="./assets/img/intensity/10.png"  width="400">
-                            </td>
-                            <td>
-                                <audio id="player" controls>
-                                    <source src="./audio/intensity/10.wav"
-                                            type="audio/wav"/>
-                                </audio>
-                                <br>
-                                $$e_{LSE}^{kor2eng} * 1.0$$
+
+                                <div class="row">
+                                    <div class="text-center col-lg-12">
+                                        <br/>
+                                        <img id="img_src1" src="./assets/img/intensity/1/10.png" width="500">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="text-center col-lg-12">
+                                        <br/>
+                                        <audio id="audio_panel1" controls="controls">
+                                            <source id="audio_src1" src="./audio/intensity/1/00.wav" type="audio/wav"/>
+                                        </audio>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
                     </table>
 
 
+                    <table class="table table-responsive align-content-center"
+                           style="background-color: whitesmoke; border-radius: 20px">
+                        <tr>
+                            <td style="vertical-align: middle;">
+                                Script: 룩 포워드 투 씨잉 웨어 유 고 넥쓰트.
+                                <br>
+                                <span style="color: slategray; opacity: 0.5">Look forward to seeing where you go next.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row text-center">
+                                    <div class="col-lg-12 ml-auto">
+                                    </div>
 
-                    <p></p>
+                                    <div class="col-lg-12 ml-auto" style="background: lightslategray">
+                                        <br>
+                                        <h5>Interpolation</h5>
+
+                                        <span id="lse-val12" style="font-size: 25px;">\(e_{LSE}^{zero}\)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input id="intensity2" type="input" data-slider-min="0" data-slider-max="1"
+                                               data-slider-step="0.2" data-sliåder-value="0"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span id="lse-val22" style="font-size: 23px;">\(e_{LSE}^{kor2eng}\)</span>
+                                        <br>
+                                        <br>
+                                    </div>
+
+                                </div>
+
+                                <br>
+
+                                <div class="row">
+                                    <div class="text-center col-lg-12">
+                                        <br/>
+                                        <img id="img_src2" src="./assets/img/intensity/2/10.png" width="500">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="text-center col-lg-12">
+                                        <br/>
+                                        <audio id="audio_panel2" controls="controls">
+                                            <source id="audio_src2" src="./audio/intensity/2/00.wav" type="audio/wav"/>
+                                        </audio>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                    <table class="table table-responsive align-content-center"
+                           style="background-color: whitesmoke; border-radius: 20px">
+                        <tr>
+                            <td style="vertical-align: middle;">
+                                Script: Annyeonghaseyo je ireumeun honggildong ipnida.
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row text-center">
+                                    <div class="col-lg-12 ml-auto">
+                                    </div>
+
+                                    <div class="col-lg-12 ml-auto" style="background: lightslategray">
+                                        <br>
+                                        <h5>Interpolation</h5>
+
+                                        <span id="lse-val13" style="font-size: 25px;">\(e_{LSE}^{zero}\)</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input id="intensity3" type="input" data-slider-min="0" data-slider-max="1"
+                                               data-slider-step="0.2" data-sliåder-value="0"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span id="lse-val23" style="font-size: 23px;">\(e_{LSE}^{eng2kor}\)</span>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="row">
+                                    <div class="text-center col-lg-12">
+                                        <br/>
+                                        <img id="img_src3" src="./assets/img/intensity/3/10.png" width="500">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="text-center col-lg-12">
+                                        <br/>
+                                        <audio id="audio_panel3" controls="controls">
+                                            <source id="audio_src3" src="./audio/intensity/3/00.wav" type="audio/wav"/>
+                                        </audio>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
                 </div>
             </div>
         </div>
-
-
+    </div>
 </section>
 
 
@@ -779,6 +1010,99 @@
 <script type="text/javascript"></script>
 
 <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- slider JS -->
+<script type="text/javascript">
+    function zeroPad(nr, base) {
+        var len = (String(base).length - String(nr).length) + 1;
+        return len > 0 ? new Array(len).join('0') + nr : nr;
+    }
+
+    function audio_reload(id) {
+        intensity = zeroPad(Number($("#intensity"+id).val()) * 10, 10);
+
+        var img_name = "./assets/img/intensity/" + id + '/' + intensity + ".png";
+        var audio_name = "./audio/intensity/" + id + '/' + intensity + ".wav";
+
+        console.log(intensity)
+        // console.log(audio_name)
+
+        $('#img_src'+id).attr("src", img_name);
+        $('#audio_src'+id).attr("src", audio_name);
+
+        //console.log($('#audio_src').val());
+        //console.log($("#audio_panel"))
+        $('#audio_panel'+id)[0].load();
+
+    };
+    $(function () {
+
+        $('#intensity0').slider({
+            formatter: function (value) {
+                return value;
+            }
+        });
+
+//slider:ready slider:changed
+        // 슬라이더에서 선택한 값을 출력하는 부분
+        $('#intensity0').on("slide changed", function () {
+            audio_reload("0")
+        });
+        $('#intensity0').on("slide down", function () {
+            audio_reload("0")
+        });
+
+    });
+
+    $(function () {
+
+        $('#intensity1').slider({
+            formatter: function (value) {
+                return value;
+            }
+        });
+        $('#intensity1').on("slide changed", function () {
+            audio_reload("1")
+        });
+        $('#intensity1').on("slide down", function () {
+            audio_reload("1")
+        });
+
+    });
+
+
+    $(function () {
+
+        $('#intensity2').slider({
+            formatter: function (value) {
+                return value;
+            }
+        });
+        $('#intensity2').on("slide changed", function () {
+            audio_reload("2")
+        });
+        $('#intensity2').on("slide down", function () {
+            audio_reload("2")
+        });
+
+    });
+
+    $(function () {
+
+        $('#intensity3').slider({
+            formatter: function (value) {
+                return value;
+            }
+        });
+        $('#intensity3').on("slide changed", function () {
+            audio_reload("3")
+        });
+        $('#intensity3').on("slide down", function () {
+            audio_reload("3")
+        });
+
+    });
 </script>
 </body>
 </html>
